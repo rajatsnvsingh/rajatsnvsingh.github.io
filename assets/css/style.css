@@ -1,0 +1,78 @@
+body {
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif, serif;
+}
+.rs-navbar {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 0px 50px 0px 70px;
+  box-sizing: border-box;
+}
+.rs-navbar-menu {
+  float: right;
+  display: flex;
+}
+.rs-navbar-logo {
+  float: left;
+}
+
+.rs-navbar-logo-home {
+  padding: 20px;
+  height: 40px;
+}
+.rs-navbar-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+.rs-navbar-button:hover {
+  background-color: rgba(128, 128, 128, 0.664);
+}
+.rs-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+}
+.rs-home-greeting-message {
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px;
+  text-align: center;
+}
+.rs-home-greeting-code {
+  font-family: monospace;
+  margin: 0px 0px 0px 10px;
+}
+.rs-home-greeting {
+  width: 70%;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rs-hmsg-main {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 10;
+  font-size: 40px;
+}
+.rs-hmsg-fine {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.rs-home-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.679)),
+    url(../images/home-backdrop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
