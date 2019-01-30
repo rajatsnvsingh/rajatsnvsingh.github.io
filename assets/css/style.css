@@ -2,13 +2,15 @@ body {
   margin: 0px;
   font-family: Helvetica, Arial, sans-serif, serif;
 }
+
 .rs-navbar {
   position: relative;
   width: 100%;
-  background: rgba(0, 0, 0, 0);
   color: white;
   padding: 0px 50px 0px 70px;
   box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .rs-navbar-menu {
   float: right;
@@ -23,11 +25,12 @@ body {
   height: 40px;
 }
 .rs-navbar-button {
+  text-decoration: none;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: white;
-  height: 50px;
-  padding: 10px;
+  margin-top: 10px;
+  padding: 20px;
   cursor: pointer;
 }
 .rs-navbar-button:hover {
@@ -67,16 +70,42 @@ body {
   font-style: italic;
 }
 
-.rs-home-body {
+.rs-home-backdrop {
   background-image: linear-gradient(rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.679)),
     url(../images/home-backdrop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+}
+
+.rs-navbar-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.679)),
+    url(../images/home-backdrop.jpg);
+  height: 100vh;
+  /* box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75); */
+}
+
+.rs-navbar-education {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.679)),
+    url(../images/education-backdrop2.jpg);
+  height: 35vh;
+  box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+}
+
+.rs-navbar-title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.rs-max-height {
   height: 100vh;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 785px) {
   .rs-navbar {
     display: flex;
     justify-content: center;
