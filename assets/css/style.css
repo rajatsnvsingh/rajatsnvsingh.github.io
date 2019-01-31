@@ -47,14 +47,11 @@ body {
   padding: 20px;
   text-align: center;
 }
-.rs-home-greeting-code {
-  font-family: monospace;
-  margin: 0px 0px 0px 10px;
-}
+
 .rs-home-greeting {
   width: 70%;
   color: white;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -111,5 +108,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 20px 0px 0px 0px;
+  }
+  .rs-navbar-logo-home {
+    padding: 0;
+  }
+  .rs-navbar-title {
+    font-size: 20px;
   }
 }
