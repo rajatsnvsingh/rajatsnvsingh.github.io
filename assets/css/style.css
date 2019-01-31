@@ -5,6 +5,7 @@ body {
 
 .rs-navbar {
   position: relative;
+  display: inline-block;
   width: 100%;
   color: white;
   padding: 0px 50px 0px 70px;
@@ -32,6 +33,9 @@ body {
   margin-top: 10px;
   padding: 20px;
   cursor: pointer;
+}
+.rs-button-selected {
+  border-bottom: 1px solid white;
 }
 .rs-navbar-button:hover {
   background-color: rgba(128, 128, 128, 0.664);
@@ -77,9 +81,19 @@ body {
 
 .rs-navbar-contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.679)),
-    url(../images/home-backdrop.jpg);
+    url(../images/contact-backdrop.jpg);
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   /* box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75); */
+}
+
+.rs-navbar-experience {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.679)),
+    url(../images/experience-backdrop.jpg);
+  height: 35vh;
+  box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
 }
 
 .rs-navbar-education {
@@ -114,6 +128,6 @@ body {
     padding: 0;
   }
   .rs-navbar-title {
-    font-size: 20px;
+    display: none;
   }
 }
