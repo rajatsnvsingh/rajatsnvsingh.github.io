@@ -150,25 +150,22 @@ body {
   margin: 10px;
 }
 
-.rs-academics-content {
+.rs-center-content {
   max-width: 1100px;
   margin: auto;
   padding: 40px 10px 0px 10px;
 }
 
 .rs-academics-education-containter {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
   overflow: hidden;
   position: relative;
   min-height: 200px;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.rs-academics-education-content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  float: left;
+  background: white;
 }
 
 .rs-academics-education-content h2,
@@ -177,7 +174,7 @@ h3 {
 }
 
 .rs-schulich-img {
-  float: right;
+  /* float: right; */
   height: 200px;
 }
 
@@ -185,6 +182,103 @@ h3 {
   display: inline-block;
   vertical-align: top;
   width: 45%;
+}
+
+.rs-experience-card {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.rs-experience-card-content {
+  text-align: justify;
+  padding-right: 30px;
+}
+.rs-experience-card-img {
+  max-width: 300px;
+}
+.rs-experience-card-img-contrainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rs-experience-card-date {
+  margin-right: 100px;
+  margin-left: auto;
+  background: black;
+  color: white;
+  width: 250px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.rs-skill-container {
+  font-family: monospace;
+  margin-bottom: 50px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+.rs-skill-section {
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.rs-skill-introductory {
+  background: white;
+}
+
+.rs-skill-intermediate {
+  background: #a0a0a0;
+}
+
+.rs-skill-proficient {
+  background: #424141;
+  color: white;
+}
+
+.rs-skill-tag-title {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  min-width: 170px;
+}
+
+.rs-skill-tag-set {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rs-skill-tag-set div {
+  padding: 5px 10px 5px 10px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.rs-skill-tag-set div:hover {
+  transform: scale(1.5);
+  cursor: default;
+}
+
+.rs-skill-legend {
+  justify-content: flex-end;
+}
+
+.rs-skill-container-title {
+  margin-bottom: 5px;
+}
+
+#rs-content-body {
+  background: #f5f5f5;
 }
 
 #footer {
@@ -199,9 +293,15 @@ h3 {
   font-style: italic;
 }
 
+.rs-academic-table {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
+  background: white;
 }
 
 th {
@@ -211,11 +311,19 @@ th {
 th,
 td {
   text-align: left;
-  padding: 10px;
+  padding: 15px;
 }
 
 tr:nth-child(even) {
   background-color: #eeeeee;
+}
+
+.rs-inline-block {
+  display: inline-block;
+}
+
+.rs-verticle-align-center {
+  vertical-align: middle;
 }
 
 @media only screen and (max-width: 785px) {
@@ -238,12 +346,33 @@ tr:nth-child(even) {
   .rs-contact-email {
     font-size: 17px;
   }
-  .rs-schulich-img {
+  /* .rs-schulich-img {
     display: none;
-  }
+  } */
   .rs-academics-list {
     display: inline-block;
     vertical-align: top;
     width: 100%;
+  }
+  .rs-experience-card {
+    display: inline-block;
+  }
+  .rs-experience-card-img {
+    margin: auto;
+  }
+  .rs-experience-card-date {
+    margin-right: 30px;
+  }
+  .rs-experience-card-content {
+    padding-right: 10px;
+    text-align: left;
+  }
+  .rs-skill-section {
+    display: table;
+  }
+  .rs-academics-education-containter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
