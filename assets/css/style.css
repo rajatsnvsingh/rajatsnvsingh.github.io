@@ -150,6 +150,74 @@ body {
   margin: 10px;
 }
 
+.rs-academics-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 10px 0px 10px;
+}
+
+.rs-academics-education-containter {
+  overflow: hidden;
+  position: relative;
+  min-height: 200px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.rs-academics-education-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+}
+
+.rs-academics-education-content h2,
+h3 {
+  margin: 0;
+}
+
+.rs-schulich-img {
+  float: right;
+  height: 200px;
+}
+
+.rs-academics-list {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+
+#footer {
+  margin-top: 50px;
+  background: black;
+  color: white;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  box-shadow: 0 8px 6px -6px rgb(121, 121, 121);
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
 @media only screen and (max-width: 785px) {
   .rs-navbar {
     display: flex;
@@ -169,5 +237,13 @@ body {
   }
   .rs-contact-email {
     font-size: 17px;
+  }
+  .rs-schulich-img {
+    display: none;
+  }
+  .rs-academics-list {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
   }
 }
