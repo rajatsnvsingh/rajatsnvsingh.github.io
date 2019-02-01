@@ -52,7 +52,7 @@ body {
   text-align: center;
 }
 
-.rs-home-greeting {
+.rs-absolute-center {
   width: 70%;
   color: white;
   position: absolute;
@@ -116,6 +116,40 @@ body {
   height: 100vh;
 }
 
+.rs-contact-content {
+  color: white;
+  max-width: 400px;
+  text-align: center;
+}
+
+.rs-contact-resume {
+  border: 1px solid white;
+  display: inline-flex;
+}
+
+.rs-contact-resume-link {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.rs-contact-resume-link:hover {
+  background: rgba(141, 141, 141, 0.589);
+}
+
+.rs-contact-details {
+  padding: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349));
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  border: 1px solid white;
+}
+.rs-contact-img {
+  width: 40%;
+  margin: 10px;
+}
+
 @media only screen and (max-width: 785px) {
   .rs-navbar {
     display: flex;
@@ -129,5 +163,11 @@ body {
   }
   .rs-navbar-title {
     display: none;
+  }
+  .rs-contact-img {
+    width: 80%;
+  }
+  .rs-contact-email {
+    font-size: 17px;
   }
 }
