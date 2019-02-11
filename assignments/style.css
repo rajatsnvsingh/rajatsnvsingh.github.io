@@ -4,6 +4,8 @@
   padding: 10px;
   font-size: 15px;
   height: 37.6px;
+  overflow-wrap: break-word;
+  overflow: scroll;
 }
 #main-display {
   padding: 10px;
@@ -13,6 +15,8 @@
   border: 1px solid black;
   margin-bottom: 20px;
   height: 51.6px;
+  overflow: scroll;
+  overflow-wrap: break-word;
 }
 button {
   background-color: #c9daf8; /* Green */
@@ -28,7 +32,8 @@ button {
   cursor: pointer;
   transition-duration: 0.4s;
 }
-button:hover {
+
+button:active {
   background: #95b8f5;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);

@@ -1,13 +1,24 @@
-let input = "";
-let output = "";
-let c_state = "AC";
+(function() {
+  // Adding event listners to all buttons
+  var buttons = document.querySelectorAll("button");
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener(
+      "click",
+      function(event) {
+        buttonPressed(event.target.id);
+      },
+      false
+    );
+  }
+})();
 
-document.addEventListener("click", function(event) {
-  if (event.target.tagName !== "BUTTON") return;
-  buttonPressed(event.target.id);
-});
+// Button Pressed Method to handle press events
+let buttonPressed = function(id) {
+  // Retrieve Current Values from the Calculator
+  let input = document.getElementById("main-display-text").innerHTML;
+  let output = document.getElementById("expression-text").innerHTML;
+  let c_state = document.getElementById("C").innerHTML;
 
-function buttonPressed(id) {
   if (id === "=") {
     output = input + " =";
     try {
@@ -15,6 +26,7 @@ function buttonPressed(id) {
       c_state = "AC";
     } catch (err) {
       output = output + "ERROR";
+      c_state = "AC";
     }
   } else if (id === "C") {
     if (c_state === "AC") {
@@ -26,9 +38,11 @@ function buttonPressed(id) {
     c_state = "C";
     input = input + id;
   }
+
+  // Update HTML based on the state of the variables
   document.getElementById("expression-text").innerHTML = output;
   document.getElementById("main-display-text").innerHTML = input;
   c_state === "C" && input !== ""
     ? (document.getElementById("C").innerHTML = "C")
     : (document.getElementById("C").innerHTML = "AC");
-}
+};
